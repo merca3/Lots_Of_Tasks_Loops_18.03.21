@@ -24,3 +24,15 @@ for (i = 0; i < numLong; i++) {
     sum += parseInt(numSplit[i]);
 };
 console.log(`The sum of digits of number ${number} is ${sum}`);
+
+// Version from Janis
+
+const numberString = '1234';
+let sum2 = 0;
+for (let digit of numberString) {
+    const nummericDigit = digit * 1;
+    sum2 += nummericDigit;
+}
+
+console.log(`Input a number: ${numberString}`);
+console.log(`The sum of digits of ${numberString} is: ${sum2}`);

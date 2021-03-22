@@ -1,5 +1,6 @@
+const counterLimit = 500;
 let counter = 1;
-while (counter <= 500) {
+while (counter <= counterLimit) {
     let sum = 0;
     for (let i = 1; i < counter; i++) {
         if (counter % i === 0 && counter !== i) {
@@ -14,7 +15,7 @@ while (counter <= 500) {
 
 // both versions work!
 
-for (counter = 1; counter <= 500; counter++) {
+for (counter = 1; counter <= counterLimit; counter++) {
     sum = 0;
     for (let i = 1; i < counter; i++) {
         if (counter % i === 0 && counter !== i) {
