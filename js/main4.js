@@ -2,7 +2,7 @@ let counter = 1;
 while (counter <= 500) {
     let sum = 0;
     for (let i = 1; i < counter; i++) {
-        if (counter % i == 0 && counter !== i) {
+        if (counter % i === 0 && counter !== i) {
             sum += i;
         }
     }
@@ -17,7 +17,7 @@ while (counter <= 500) {
 for (counter = 1; counter <= 500; counter++) {
     sum = 0;
     for (let i = 1; i < counter; i++) {
-        if (counter % i == 0 && counter !== i) {
+        if (counter % i === 0 && counter !== i) {
             sum += i;
         };
     };

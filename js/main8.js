@@ -4,6 +4,7 @@ for (let counter = 2; counter <= 50; counter++) {
     for (let i = 2; i <= counter; i++) {
         if (counter % i === 0 && i !== counter) {
             notPrime = true;
+            // break;
         }
     }
     if (notPrime === false) {
